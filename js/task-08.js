@@ -8,7 +8,7 @@ function registerEvent(event) {
     const password = form.elements.password.value;
 
     if (email === "" || password == "") {
-        alert("Please fill in all fields");
+       return alert("Please fill in all fields");
     }
 
     const formData = new FormData(this);

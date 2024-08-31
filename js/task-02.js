@@ -9,11 +9,11 @@ const ingredients = [
 
 const ulElement = document.getElementById("ingredients");
 
-ingredients.map(ingredient => {
+const liElements = ingredients.map(ingredient => {
   const liElement = document.createElement("li");
   liElement.textContent = ingredient;
   liElement.classList.add("item");
   return liElement;
 });
 
-ulElement.append(...ingredients);
+ulElement.append(...liElements);
